@@ -9,4 +9,4 @@ tags: [Ubuntu, PDF]
 ---
 So you wish to join 2 or more PDF files into one. If you have `poppler` installed all you need to do is
 
-pdfunite file1 file2 outputfile
+    pdfunite file1 file2 outputfile
