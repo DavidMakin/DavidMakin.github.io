@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a simple REST application with Silex. Part 1 of 3
-date: 2014-02-21 10:52:34 +0000
+date: 2013-12-23 10:52:34 +0000
 description: 
 img: silex.jpg # Add image post (optional)
 fig-caption: Photo by <a href="https://unsplash.com/@zoltantasi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zoltan Tasi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -128,4 +128,7 @@ This is now in a format suitable for your frontend shop or backend telephone ope
 ### Why Silex?
 Good question. The answer is because as it is a micro-framework it doesn’t try to get in the way by forcing it’s own preferred method of working on me and it just happens to be what I am currently using. If you wanted you could use Slim, any other micro-framework or even a full fat framework like Symfony or Zend.
 
-# Links
+## Links
+[Creating a simple REST application with Silex. Part 1 of 3](/simple-rest-with-silex-part1-of-3)  
+[Creating a simple REST application with Silex. Part 2 of 3](/simple-rest-with-silex-part2-of-3)  
+[Creating a simple REST application with Silex. Part 3 of 3](/simple-rest-with-silex-part3-of-3)  
