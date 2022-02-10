@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   He lives in Manchester, likes coffee and writes code.
   Occasionally he throws axes and snowboards
 permalink: ':title/'
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.sleep-er.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: pwnedsleeper #if your site has a twitter account, enter it here
 
