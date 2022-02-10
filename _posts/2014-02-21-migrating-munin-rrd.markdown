@@ -3,7 +3,7 @@ layout: post
 title: Migrating Munin RRD files to a different machine
 date: 2014-02-21 10:52:34 +0000
 description: How I moved Munin RRD files to a new machine
-img: munin-rrd.jpg # Add image post (optional)
+img: munin-rrd.webp # Add image post (optional)
 fig-caption: Photo by <a href="https://unsplash.com/@johncobb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Cobb</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
  # Add figcaption (optional)
 tags: [Munin, RRD]

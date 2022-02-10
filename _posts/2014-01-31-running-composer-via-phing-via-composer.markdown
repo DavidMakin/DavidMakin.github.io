@@ -3,7 +3,7 @@ layout: post
 title: Running Composer via Phing via Composer
 date: 2014-01-31 13:32:20 +0000
 description: Running Composer via Phing via Composer
-img: composer-phing-composer.jpg # Add image post (optional)
+img: composer-phing-composer.webp # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Composer, Phing, Jenkins]
 ---

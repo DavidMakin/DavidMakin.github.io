@@ -3,7 +3,7 @@ layout: post
 title: Creating a simple REST application with Silex. Part 1 of 3
 date: 2013-12-23 10:52:34 +0000
 description: 
-img: silex.jpg # Add image post (optional)
+img: silex.webp # Add image post (optional)
 fig-caption: Photo by <a href="https://unsplash.com/@zoltantasi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zoltan Tasi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
  # Add figcaption (optional)
 tags: [Silex, REST, PHP]
