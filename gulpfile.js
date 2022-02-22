@@ -1,4 +1,6 @@
 const gulp = require('gulp');
+const { src, dest, series, parallel } = require('gulp');
+
 const sass = require('gulp-sass');
 const prefix = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
@@ -7,6 +9,9 @@ const cache = require('gulp-cache');
 const cp = require('child_process');
 const browserSync = require('browser-sync');
 const webp = require('gulp-webp');
+const cwebp = require('gulp-cwebp');
+const imageminWebp = require('imagemin-webp');
+const rename = require('gulp-rename');
 
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
@@ -34,8 +39,28 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+// Compress images and convert to webp
+const ASSETS_DIR = 'assets';
+const EXCLUDE_SRC_GLOB = `!(favicon*|*-256|*-512|*-1024)`;
+function convert(from, to, extension = 'webp') {
+    const SRC = `${ASSETS_DIR}/${from}/**/${EXCLUDE_SRC_GLOB}*.{jpg,png}`;
+    const DEST = `${ASSETS_DIR}/${from}/`;
+
+    return function convertWebp() {
+        return src(SRC)
+            .pipe(imagemin([imageminWebp({ quality: 80 })]))
+            .pipe(
+                rename({
+                    extname: `.${extension}`,
+                })
+            )
+            .pipe(dest(DEST));
+    };
+}
+gulp.task('to-webp', convert('img'))
+
 // Compression images
-gulp.task('img-old', function() {
+gulp.task('img-min', function() {
     return gulp.src('assets/img/**/*')
         .pipe(cache(imagemin({
             interlaced: true,
@@ -46,14 +71,9 @@ gulp.task('img-old', function() {
         .pipe(gulp.dest('_site/assets/img'))
         .pipe(browserSync.reload({stream:true}));
 });
-gulp.task('img', () =>
-    gulp.src('assets/img/**/*')
-        .pipe(webp())
-        .pipe(gulp.dest('_site/assets/img'))
-);
 
 // Wait for jekyll-build, then launch the Server
-gulp.task('browser-sync', gulp.series('sass', 'img', 'jekyll-build'), function() {
+gulp.task('browser-sync', gulp.series('sass', 'to-webp', 'img-min', 'jekyll-build'), function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -71,4 +91,4 @@ gulp.task('watch', function () {
 });
 
 //  Default task
-gulp.task('default', gulp.series('browser-sync', 'watch'));
+gulp.task('default', gulp.series('sass', 'to-webp', 'img-min'));

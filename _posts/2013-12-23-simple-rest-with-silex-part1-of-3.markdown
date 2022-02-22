@@ -4,9 +4,9 @@ title: Creating a simple REST application with Silex. Part 1 of 3
 date: 2013-12-23 10:52:34 +0000
 description: 
 img: silex.webp # Add image post (optional)
-fig-caption: Photo by <a href="https://unsplash.com/@zoltantasi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zoltan Tasi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
- # Add figcaption (optional)
+fig-caption: Photo by <a href="https://unsplash.com/@zoltantasi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zoltan Tasi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> # Add figcaption (optional)
 tags: [Silex, REST, PHP]
+toc: true
 ---
 So you have come to the conclusion that, rather than having the code to update customer details and that little fix to convert the date from GMT to UTC should happen in once place rather than being copied into several pieces of code, a REST service is the answer. Perhaps you just think you should know how to create a REST service. Either way this post is for you.
 
