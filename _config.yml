@@ -2,7 +2,7 @@ title: Hello, world! I'm David Makin
 description: > # this means to ignore newlines until "baseurl:"
   David Makin.
   He lives in Manchester, likes coffee and writes code.
-  Occasionally he throws axes and snowboards
+  Occasionally he throws axes and goes snowboarding
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.sleep-er.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
