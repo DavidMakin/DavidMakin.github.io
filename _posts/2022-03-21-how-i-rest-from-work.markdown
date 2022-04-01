@@ -16,4 +16,4 @@ Ideally outdoors but that is only really once a year. I do live about 30 minutes
 
 I also enjoy climbing. Along with my wife we try to go once a week.  
 
-Axe throwing. WHistlePunks in Manchester had a weekly league I was part of until Corona put an end to that :(
+Axe throwing. WhistlePunks in Manchester had a weekly league I was part of until Corona put an end to that :(
