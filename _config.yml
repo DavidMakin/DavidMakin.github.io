@@ -13,6 +13,7 @@ author: David Makin # add your name
 author-img: david-makin.webp # add your photo
 author-img-header: large-me.webp # add your photo
 about-author: I am a developer. Usually focusing on backend services in PHP and Typescript. # add description
+social-mastodon: sleeper # add your mMstodon handle
 social-twitter: pwnedsleeper # add your Twitter handle
 social-facebook: david.makin # add your Facebook handle
 social-github: DavidMakin # add your Github handle

@@ -28,17 +28,20 @@ layout: default
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
+        {% if site.social-mastodon %}
+          <li><a rel="me" href="https://mastodon.lol/@{{ site.social-mastodon }}" target="_blank" title="mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+        {% endif %}
         {% if site.social-twitter %}
-          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank" title="twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-facebook %}
-          <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank" title="facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-github %}
-          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank" title="github"><i class="fa fa-github"></i></a></li>
+          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank" title="github"><i class="fa-brands fa-github"></i></a></li>
         {% endif %}
         {% if site.social-linkedin %}
-          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
         {% endif %}
         {% if site.social-email %}
           <li class="email"><a href="mailto:{{site.social-email}}" title="email"><i class="fa fa-envelope-o"></i></a></li>
