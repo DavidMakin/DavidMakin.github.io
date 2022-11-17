@@ -28,6 +28,7 @@ layout: default
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
+        {% if site.social-mastodon %}
           <li><a rel="me" href="https://mastodon.social/@{{ site.social-mastodon }}" target="_blank" title="mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-twitter %}
