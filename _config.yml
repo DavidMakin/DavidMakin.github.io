@@ -17,7 +17,7 @@ relme:
 author: David Makin # add your name
 author-img: david-makin.webp # add your photo
 author-img-header: large-me.webp # add your photo
-about-author: "I am aPlatform Engineer. Working with Terraform, k8s and fun cloud services.<s><br><br>I am a developer. Usually focusing on backend services in PHP and Typescript.</s>" # add description
+about-author: "I am a Platform Engineer. Working with Terraform, k8s and fun cloud services.<s><br><br>I am a developer. Usually focusing on backend services in PHP and Typescript.</s>" # add description
 social-mastodon: _sleeper # add your mastodon handle
 social-mastodon-server: hachyderm.io
 # social-twitter: pwnedsleeper # add your Twitter handle
